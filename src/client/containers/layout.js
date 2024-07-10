@@ -420,7 +420,7 @@ class Layout extends React.Component {
 				<a className="sr-only sr-only-focusable" href="#content">
 					Skip to main content
 				</a>
-				<Navbar className="BookBrainz" expand="lg" fixed="top" role="navigation">
+				<Navbar className={`BookBrainz ${this.state.darkMode ? 'dark-mode' : ''}`} expand="lg" fixed="top" role="navigation">
 					{this.renderNavHeader()}
 					<Navbar.Toggle/>
 					{this.renderNavContent()}
